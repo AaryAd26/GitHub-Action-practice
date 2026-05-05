@@ -3,7 +3,7 @@ name: python lint
 on :
     push:
         branches: [main]
-    workflow_dispatch:
+
 
 jobs:
     validate:
@@ -25,3 +25,4 @@ jobs:
             - name: Run lintersq
               run: 
                     flake8 app.py
+                    
